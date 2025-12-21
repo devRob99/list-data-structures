@@ -1,6 +1,7 @@
 package SinglyLinkedList;
 import java.io.PrintStream;
 
+// created SinglyLinkedNode class
 class SinglyLinkedNode
 {
     public int data;
@@ -13,6 +14,7 @@ class SinglyLinkedNode
     }
 }
 
+// created SinglyLinkedList class
 class SinglyLinkedList
 {
     private SinglyLinkedNode head;
@@ -40,6 +42,24 @@ class SinglyLinkedList
         {
             tail.next = newNode;
             tail = newNode;
+        }
+    }
+
+    // prepend operation
+    public void prepend (int item) {
+        prependNode(new SinglyLinkedNode(item));
+    }
+    public void prependNode(SinglyLinkedNode newNode)
+    {
+        if (head == null)
+        {
+            head = newNode;
+            tail = newNode;
+        }
+        else
+        {
+            newNode.next = head;
+            head = newNode;
         }
     }
 
