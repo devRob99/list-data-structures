@@ -15,10 +15,10 @@ public class main
         numStack.push(90);
 
         numStack.pop();
-        numStack.pop();
 
         System.out.println("Stack: ");
         numStack.print(System.out);
 
+        System.out.println(numStack.peek());
     }
 }

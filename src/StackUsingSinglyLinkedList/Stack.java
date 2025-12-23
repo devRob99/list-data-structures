@@ -40,6 +40,12 @@ class Stack
         return poppedItem;
     }
 
+    // Added peek feature
+    public int peek()
+    {
+        return top.data;
+    }
+
     public void print(PrintStream out)
     {
         StackNode node = top;
