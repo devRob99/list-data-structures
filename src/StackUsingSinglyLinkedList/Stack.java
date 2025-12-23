@@ -46,6 +46,12 @@ class Stack
         return top.data;
     }
 
+    // isEmpty feature
+    public boolean isEmpty()
+    {
+        return top == null;
+    }
+
     public void print(PrintStream out)
     {
         StackNode node = top;
