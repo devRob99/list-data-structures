@@ -68,5 +68,18 @@ class Stack
         }
         out.println();
     }
-}
 
+    public int getLength()
+    {
+        int length = 0;
+
+        StackNode node = top;
+        while (node != null)
+        {
+            length++;
+            node = node.next;
+        }
+
+        return length;
+    }
+}

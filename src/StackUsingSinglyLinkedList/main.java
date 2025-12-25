@@ -1,10 +1,12 @@
 package StackUsingSinglyLinkedList;
 
+import static java.lang.reflect.Array.getLength;
+
 public class main
 {
     public static void main(String[] args)
     {
-        int[] numbers = { 70, 40, 10};
+        int[] numbers = { 70, 40, 10, 60, 12, 5, 2};
 
         Stack numStack = new Stack();
         for (int number : numbers)
@@ -27,5 +29,6 @@ public class main
             System.out.println("Stack is empty");
         }
 
+        System.out.println(numStack.getLength());
     }
 }
